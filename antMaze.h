@@ -29,5 +29,8 @@ typedef struct position position;
 
 int antMaze(void);
 
+//clear the death symbols
+void clearTheMaze(void);
+
 void printTheMaze(void);
 #endif

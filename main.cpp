@@ -14,6 +14,7 @@ int main(void)
 
     //Output the solution
     printf("You win!!\n");
+    clearTheMaze();
     printTheMaze();
 
     return 0;

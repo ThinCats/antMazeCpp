@@ -26,7 +26,7 @@ int antMaze(void)
     if(maze[WIN_I][WIN_J] == 1)
     {
         printf("No solution!\n");
-        exit();
+        exit(1);
 
     }
     while(1)
@@ -116,4 +116,17 @@ void printTheMaze(void)
 
     putchar('\n');
     putchar('\n');
+}
+
+void clearTheMaze(void)
+{
+        int i, j;
+    for(i = 0;i < SIZE;i++)
+    {
+        for(j = 0;j < SIZE;j++)
+        {
+            if(maze[i][j] == 2)
+                maze[i][j] = 0;
+        }
+    }
 }
