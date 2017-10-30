@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1509370551 source:d:\git\antmazecpp\main.cpp
+	<cstdio>
+	"antMaze.h"
+	<iostream>
+
+1509370659 d:\git\antmazecpp\antmaze.h
+
+1509370551 source:d:\git\antmazecpp\antmaze.cpp
+	"antMaze.h"
+	<stdio.h>
+	<stack>
+
