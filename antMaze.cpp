@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include <stack>
 #include<cstdlib>
+#define MAXSTACK 200
 using namespace std;
 int maze[SIZE][SIZE]
 ={
@@ -23,6 +24,9 @@ int antMaze(void)
 {
     stack<position> s;
     position current = {START_I, START_J};
+    int countNum = 0;
+
+
     if(maze[WIN_I][WIN_J] == 1)
     {
         printf("No solution!\n");
@@ -31,6 +35,13 @@ int antMaze(void)
     }
     while(1)
     {
+        countNum++;
+        if(countNum > MAXSTACK)
+        {
+            printf("No Solution\n");
+            break;
+        }
+
         printf("Now i=%d j=%d  :\n",current.i, current.j);
         printTheMaze();
 
